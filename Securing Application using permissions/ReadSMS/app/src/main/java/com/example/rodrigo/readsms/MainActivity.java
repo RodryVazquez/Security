@@ -20,7 +20,6 @@ public class MainActivity extends ListActivity {
     }
 
     private class SmaCursorAdapter{
-
     }
 }
 
