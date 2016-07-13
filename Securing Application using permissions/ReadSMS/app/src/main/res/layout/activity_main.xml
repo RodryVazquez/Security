@@ -10,20 +10,29 @@
     tools:context="com.example.rodrigo.readsms.MainActivity">
 
     <TextView
-        android:id="@+id/sma_origin"
+        android:id="@+id/sms_origin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="22dp"
+        android:textStyle="normal"
         android:text="origin" />
     <TextView
         android:id="@+id/sms_body"
-        android:layout_below="@id/sma_origin"
+        android:layout_below="@id/sms_origin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:textStyle="normal"
         android:text="body" />
     <TextView
-        android:id="@+id/sma_date"
+        android:id="@+id/sms_date"
         android:layout_below="@id/sms_body"
         android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:textStyle="normal"
         android:layout_height="wrap_content"
         android:text="date" />
 </RelativeLayout>
