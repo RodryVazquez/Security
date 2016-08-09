@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rodrigo.applicationone">
+
+    <!-- Declaramos el permiso -->
+    <permission android:name="application1"
+        android:label="application1"
+        android:protectionLevel="dangerous"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Declaramos el intent filter (Definimos el nombre y categoria para poder accederlo desde otras aplicaciones) -->
+            <intent-filter>
+                <action android:name="Android.example.Application1"></action>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
