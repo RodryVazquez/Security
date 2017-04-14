@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rodrigo.readsms">
 
+    <!-- Permiso necesario para leer los SMS del dispositivo -->
     <uses-permission android:name="android.permission.READ_SMS"/>
 
     <application
@@ -13,10 +14,8 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

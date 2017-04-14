@@ -9,14 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Date;
 
 public class MainActivity extends ListActivity {
 
-    //Uri
+    //Uri que nos proporciona android para acceder al content provider
     public static final Uri SMS = Uri.parse("content://sms");
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,13 @@ public class MainActivity extends ListActivity {
                         new String[]{SmsColumns.ID, SmsColumns.ADDRESS, SmsColumns.DATE, SmsColumns.BODY},
                         null, null,
                         SmsColumns.DATE + " DESC");
-        SmsCursorAdapter cursorAdapter = new SmsCursorAdapter(this,cursor,true);
-        setListAdapter(cursorAdapter);
+        try{
+            //Set del adapter
+            SmsCursorAdapter cursorAdapter = new SmsCursorAdapter(this,cursor,true);
+            setListAdapter(cursorAdapter);
+        }catch (IllegalArgumentException e) {
+            Toast.makeText(this, R.string.query_exception, Toast.LENGTH_SHORT).show();
+        }
     }
 
     //Representa el contenido del sms

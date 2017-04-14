@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ReadSMS</string>
+    <string name="query_exception">Error some declared column does not exist</string>
+    <string name="origin">origin</string>
+    <string name="body">body</string>
+    <string name="date">date</string>
 </resources>
