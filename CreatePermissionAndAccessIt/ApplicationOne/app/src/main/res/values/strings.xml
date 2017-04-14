@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ApplicationOne</string>
+    <string name="title">Application 1 Activity called from Application 2</string>
 </resources>

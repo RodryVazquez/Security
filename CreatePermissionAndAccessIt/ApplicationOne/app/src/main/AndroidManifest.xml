@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rodrigo.applicationone">
 
-    <!-- Declaramos el permiso -->
-    <permission android:name="application1"
-        android:label="application1"
+    <!-- Declaramos el custom permiso -->
+    <permission android:name="com.example.rodrigo.applicationone.demo.permission"
+        android:label="private.permission"
         android:protectionLevel="dangerous"/>
 
     <application
@@ -13,7 +13,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <!-- Declaramos el permiso a nivel componente -->
+        <activity android:name=".MainActivity"
+            android:permission="com.example.rodrigo.applicationone.demo.permission">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,5 +28,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
