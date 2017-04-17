@@ -46,6 +46,7 @@ String value = preference.getString("MyString","");
 Nota
 MODE_WORLD_READABLE y MODE_WORLD_WRITABLE se encuentran obsoletos desde API nivel 17 ya que se consideran inseguros porque proporcionaban huecos de seguridad.
 
+[Android Developers Doc](https://developer.android.com/training/basics/data-storage/shared-preferences.html#GetSharedPreferences)
 
 
 
