@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UsingSharedPreferences</string>
+    <!-- Excercise -->
+    <string name="title">Shared Preferences</string>
+    <string name="save_data">Save Data</string>
+    <string name="load_data">show Data</string>
+    <string name="saved_data">Saved Data</string>
+    <string name="enter_data">Enter Data</string>
+    <string name="save">Save</string>
+    <string name="show">Show</string>
+    <string name="message_enter_data">Please enter data</string>
+</resources>

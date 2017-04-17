@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rodryvazquez.usingsharedpreferences.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/txtDataToSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginLeft="23dp"
+        android:text="@string/save_data"/>
+
+    <EditText
+        android:id="@+id/edtEnterData"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/enter_data"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="55dp"
+        android:gravity="left|top"
+        android:layout_toRightOf="@id/txtDataToSave"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDataToSave"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="66dp"
+        android:text="@string/save"/>
+
+    <TextView
+        android:id="@+id/txtDataToLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="63dp"
+        android:text="@string/load_data"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDataToLoad"
+        android:text="@string/show"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="36dp"/>
+
+    <EditText
+        android:id="@+id/edtLoadData"
+        android:hint="@string/saved_data"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnSave"
+        android:layout_alignLeft="@id/edtEnterData"
+        android:layout_marginLeft="15dp"
+        android:gravity="left|top"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
